@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Document</title>
+
+    <style>
+        body {
+            background-color: rgb(186, 231, 228);
+        
+    
+      padding-top:50px;
+       margin-top:50px;
+       margin-bottom: 50px;
+       margin-left: 500px
+        }
+        
+
+    </style>
+
+
+</head>
+
+<body>
+     <div >
+         <div id="inp"> 
+             <h1> General Question <h1>  
+            
+         </div>
+
+         <div id="parent1" > 
+             
+             <p id="inp" > Do you accept all major credit cards?</p>
+             <button class="bt1"onclick="B1()"> + </button>
+             
+        </div>
+
+         <div id="parent2">  
+            <p id="inp" > Do you support local farmers ?</p>
+            <button class="bt2"onclick="B2()" > + </button>
+
+             
+
+         </div>
+
+         <div id="parent3"> 
+            <p id="inp"> Do you use organic ingredients? </p>
+            <button class="bt3"onclick="B3()" > + </button>
+         
+        </div>
+
+</div>
+
+<script>
+    function B1(){
+   var first = document.getElementById("inp")
+   first.innerText="NO";
+    first.style.color="red";
+  }
+
+  function B2(){
+   var second = document.getElementById("inp")
+   second.innerText="YES";
+    second.style.color="blue";
+  }
+  function B3(){
+   var third = document.getElementById("inp")
+   third.innerText="YES";
+    third.style.color="orange";
+  }
+
+
+    
+</script>
+
+
+
+</body>
+
+
+
+
+</html>

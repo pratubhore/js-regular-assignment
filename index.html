@@ -1,37 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <title>password</title>
-    <style>
-        body{
-            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKIrlwLeSv_MSk6arlyqTEKQQ4MyWprly48w&usqp=CAU)
-        }
-        div{
-            width: 500px;
-            box-shadow: 0 0 10px;
-            padding: 50px;
-            margin: 100px auto;
-            background-color: rgb(70, 235, 226);
-        }
-    </style>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File</title>
     <script>
-        function fnShowHidePassword(){
-  var inputRef =   document.getElementById('iab');
-  inputRef.type="text";
-  
-  
+
+        function cylinder() {
+            var pi = 3.14
+            var h = document.getElementById('Height').value
+            var r = document.getElementById('Radius').value
+            var surface = 2 * pi * r * (h + r)
+            var sur = document.getElementById('surface')
+            sur.innerText = ("surface area=  ") + surface+("m^2")
+            var volume = pi * r * r * h
+            var vol = document.getElementById('volume')
+            vol.innerText = ("volume=  ") + volume+("m^3")
         }
-
+        function power() {
+            var v = document.getElementById('Voltage').value
+            var i = document.getElementById('Current').value
+            var power = v * i
+            var pow = document.getElementById('power')
+            pow.innerText = ("power= ") + power+("watts")
+        }
+        function wall() {
+            let w = document.getElementById('width').value
+            let y = document.getElementById('heiht').value
+            let x = document.getElementById('n').value
+            console.log(w)
+            console.log(y)
+            console.log(x)
+            let z = x/(w*y)
+            let wal = document.getElementById('walls')
+            wal.innerText = ("total number of walls that can be painted= ") + z + ("walls")
+        }
     </script>
+    <style>
+      body{
+          background-color: cadetblue;
+      }
+    </style>
+</head>
 
+<body>
+    <div>
+        <h1>Question No1</h1>
+        <p>Find the volume and surface area of the cylinder</p>
+        <label>Height</label>
+        <input type="number" id="height" value="">
+        <label>Radius</label>
+        <input type="number" id="radius" value="">
+        <button onclick="cylinder()">Answer</button><br />
+        <p id="Volume"></p><br />
+        <p id="Surface"></p>
+    </div>
+    <div>
+        <h1>Question NO2</h1>
+        <p>Find the power for given parameters </p>
+        <label>Voltage</label>
+        <input type="number" id="Voltage" value="">
+        <label>Current</label>
+        <input type="number" id="Current" value="">
+        <button onclick="power()">Answer </button><br />
+        <p id="Power"></p>
+    </div>
+    <div>
+        <h1>Question No3</h1>
+        <p>Find the Number of complete walls paint</p>
+        <label>Width</label>
+        <input type="number" id="width" value="">
+        <label>Height</label>
+        <input type="number" id="heiht" value="">
+        <label>No of squaremeter to be painted</label>
+        <input type="number" id="n" value="">
+        <button onclick="wall()">Answer</button><br />
+        <p id="walls"></p>
+    </div>
 
-    </head>
-    <body>
-        <div>
-            <h2>Show/Hide password</h2>
-            <label>Enter Text</label>
-            <input type="Password"  id="iab"/>  
-            <button onclick="fnShowHidePassword()">Show Password</button>
-            <p id="pid"></p>
-        </div>
-    </body>
-</html
+</body>
+
+</html>

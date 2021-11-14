@@ -1,51 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Prompt Assignment</title>
-</head>
-
-
-
-
-<body>
-    
-    <h1>Prompt Assignment</h1>
-    
-    <div id="mainwrapper">
-        <div id="container">
-            <input type="text" id="box">
-            
-            <input type="text" id="box" placeholder="Click on Enter Name Button"><br><br>
-            
-            <button id="enternamebtn" onclick="enterName()">Enter Name</button>
-           
-            <button id="clearbtn" onclick="clearInput()">Clear</button>
-        </div>
-    </div>
-
-
-
-   
-    <script>
-        let name = prompt("Enter Your Name","pratu matkar");
-        document.getElementById('box').value = name;
-        console.log(name);
-        
-        function enterName() {
-            let name = prompt("Enter Your Name",);
-            document.getElementById('box').value = name;
+<html>
+    <title>password</title>
+    <style>
+        body{
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKIrlwLeSv_MSk6arlyqTEKQQ4MyWprly48w&usqp=CAU)
         }
-
-         
-        function clearInput(){
-            document.getElementById('box').value = "";
+        div{
+            width: 500px;
+            box-shadow: 0 0 10px;
+            padding: 50px;
+            margin: 100px auto;
+            background-color: rgb(70, 235, 226);
+        }
+    </style>
+    <script>
+        function fnShowHidePassword(){
+  var inputRef =   document.getElementById('iab');
+  inputRef.type="text";
+  
+  
         }
 
     </script>
 
-</body>
- 
+
+    </head>
+    <body>
+        <div>
+            <h2>Show/Hide password</h2>
+            <label>Enter Text</label>
+            <input type="Password"  id="iab"/>  
+            <button onclick="fnShowHidePassword()">Show Password</button>
+            <p id="pid"></p>
+        </div>
+    </body>
+</html

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NATURE VIBES</title>
+    <style>
+      .main{
+        width:900px;
+        height:400px;
+        background-color:rgb(247, 121, 236);
+
+        margin-left: 100px;
+
+      }
+      .header{
+        width:900px;
+        height:150px;
+
+        background-color:rgb(100, 241, 154);
+        opacity:0.6;
+
+      }
+      #inp{
+      padding-top:50px;
+       margin-top:50px;
+       margin-bottom: 50px;
+       margin-left: 250px;
+       color:rgb(236, 24, 190);
+      font-size:50px;
+      border:none;
+      font-weight:bold;
+      }
+      .content{
+        display:inline-block;
+        padding:100px;
+
+        background-size: cover;
+        height:50%;
+        width:80%;
+      }
+      .btn1{
+        padding:10px 60px 10px 60px;
+        margin-left: 50px;
+        background-color: orangered;
+        border-radius:25px;
+      
+
+      }
+      .btn2{
+        padding:10px 60px 10px 60px;
+        margin-left: 30px;
+        background-color: white;
+        border-radius:25px;
+      }
+      .btn3{
+        padding:10px 60px 10px 60px;
+        margin-left:30px;
+        background-color: green;
+        border-radius:25px;
+      }
+    </style>
+</head>
+
+<body>
+<div class="main">
+  <div class="header">
+   <p id="inp">Wondering Whether</p>
+  </div>
+
+  <div class="content">
+    <button class="btn1" onclick="godMn()">GoodMorning</button>
+    <button class="btn2"onclick="godEv()">GoodEvening</button>
+    <button class="btn3"onclick="godNg()">GoodNight</button>
+  </div>
+</div>
+<script>
+function godMn(){
+ var first = document.getElementById("inp")
+
+ first.innerText="Good Morning Pratu!!";
+ first.style.color="orange";
+  }
+  function godEv(){
+   var second = document.getElementById("inp")
+   second.innerText="Good Evening Pratu!!";
+    second.style.color="white";
+  }
+  function godNg(){
+    var Third = document.getElementById("inp")
+    Third.innerText="Good Night Pratu!!"
+    Third.style.color="green";
+  }
+
+
+</script>
+</body>
+
+</html>
